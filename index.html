@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>WedMe&Co.</title>
+
+<link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Include Font Awesome CSS -->
+
+</head>
+
+<body>
+
+
+
+<div class="title">
+
+  WedMe&Co.
+
+</div>
+
+
+
+<!-- Add your button here -->
+
+<button class="button" id="openPopup"><i class="fas fa-bars"></i></button> <!-- Font Awesome icon -->
+
+
+
+<!-- Popup -->
+
+<div class="popup" id="popup">
+
+  <div class="popup-content">
+
+    <span class="close-btn" id="closePopup">&times;</span>
+
+    <!-- Add your popup content here -->
+
+    <center>
+
+        <a href="#" id="homr ">home</a>
+
+        <a href="#" id="connect">connect</a>
+
+        <a href="#" id="team">team</a><hr><br>
+
+        <p><p style="font-family: Georgia, 'Times New Roman', Times, serif; color: rgb(131, 132, 132);">At Wede&Co, we believe that every wedding should be as unique as the couple getting married, So We work closely with our dreamers to understand their dreams and bring it to life since we strongly believe we don't plan weddings we curate them.</p></p>
+
+        <button class="tell-quotes-btn" id="tellQuotes">Tell Quotes</button>
+
+  </div>
+
+    </center>
+
+  </div>
+
+</div>
+
+
+
+<!-- Video -->
+
+<video id="video" controls preload="metadata" style="width: 100%;" controlsList="nodownload" loop>
+
+  <source src="pexels-mikhail-nilov-8246501 (1080p).mp4" type="video/mp4">
+
+  Your browser does not support the video tag.
+
+</video>
+
+
+
+<!-- Add your content here -->
+
+<div style="height: 2000px;">
+
+  <!-- Some content to make the page scrollable -->
+
+</div>
+
+
+
+<script >
+// Get references to the button and popup
+const openPopupBtn = document.getElementById("openPopup");
+const popup = document.getElementById("popup");
+const closePopupBtn = document.getElementById("closePopup");
+
+// Function to open the popup
+function openPopup() {
+  popup.style.display = "block";
+}
+
+// Function to close the popup
+function closePopup() {
+  popup.style.display = "none";
+}
+
+// Event listener to open the popup when the button is clicked
+openPopupBtn.addEventListener("click", openPopup);
+
+// Event listener to close the popup when the close button is clicked
+closePopupBtn.addEventListener("click", closePopup);
+
+// Event listeners for the options
+document.getElementById("option1").addEventListener("click", function () {
+  alert("Option 1 clicked!");
+});
+
+document.getElementById("option2").addEventListener("click", function () {
+  alert("Option 2 clicked!");
+});
+
+document.getElementById("option3").addEventListener("click", function () {
+  alert("Option 3 clicked!");
+});
+
+</script> <!-- Link to JavaScript file -->
+
+</body>
+
+</html>
+
